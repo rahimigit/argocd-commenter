@@ -1,7 +1,8 @@
 name: deployment-status
 
 on:
-  deployment_status:
+  # automatic triggers removed 2026-10-30 to stop burning hosted-runner minutes; run manually
+  workflow_dispatch:
 
 jobs:
   notify:

@@ -1,12 +1,8 @@
 name: manifest
 
 on:
-  pull_request:
-    branches: [master]
-    paths:
-      - config/**
-      - e2e_test/**
-      - .github/workflows/manifest.yaml
+  # automatic triggers removed 2026-10-30 to stop burning hosted-runner minutes; run manually
+  workflow_dispatch:
 
 jobs:
   diff:

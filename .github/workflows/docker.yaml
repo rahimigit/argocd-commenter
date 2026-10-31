@@ -1,32 +1,8 @@
 name: docker
 
 on:
-  push:
-    branches:
-      - master
-    paths:
-      - .github/workflows/docker.yaml
-      - Dockerfile
-      - go.*
-      - main.go
-      - api/**
-      - controllers/**
-      - pkg/**
-      - e2e_test/**
-    tags:
-      - v*
-  pull_request:
-    branches:
-      - master
-    paths:
-      - .github/workflows/docker.yaml
-      - Dockerfile
-      - go.*
-      - main.go
-      - api/**
-      - controllers/**
-      - pkg/**
-      - e2e_test/**
+  # automatic triggers removed 2026-10-30 to stop burning hosted-runner minutes; run manually
+  workflow_dispatch:
 
 jobs:
   build:
